@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # function use Flask import (Jinga) to render an HTML template
-    return render_template("home.html")
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
