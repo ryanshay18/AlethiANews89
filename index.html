@@ -149,7 +149,11 @@ Alethia News
         </div>
     </div>
 </section>
-
+{% set names = ['Ryan Shay','Anthony Wilson','John Mortensen']%}
+{% set contributors = [] %}
+{% for n in names%}
+{{ contributors.append(n) }}
+{% endfor %}
 <!-- Footer -->
 <footer id="footer">
     <div class="inner">
@@ -161,11 +165,6 @@ Alethia News
             <section>
                 <h4>Contributors</h4>
                 <ul class="alt">
-                    {% set names = ['Ryan Shay','Anthony Wilson','John Mortensen']%}
-                    {% set contributors = [] %}
-                    {% for n in names%}
-                    {{ contributors.append(n) }}
-                    {% endfor %}
                     <li><a href="#">Ryan Shay</a></li>
                     <li><a href="#">Anthony Wilson</a></li>
                     <li><a href="#">John Mortensen</a></li>
